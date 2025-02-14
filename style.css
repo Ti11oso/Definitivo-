@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centrar verticalmente en la pantalla */
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnlzMGJoZ3VzMDlsbHRtdzNlM2h6ejBxaXYxYm45bXNlM25hdmcxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/29ojw8MkbPW9m6uhnw/giphy.gif') 
+        no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Asegura que todo esté centrado */
+    text-align: center;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.container .tenor-gif-embed {
+    max-width: 200px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.gif-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none; /* Evita que interfieran con los botones */
+}
+
+.tenor-gif-embed {
+    max-width: 200px; /* Ajusta el tamaño de los GIFs */
+    height: auto;
+    filter: drop-shadow(0px 0px 10px rgba(255, 105, 180, 0.5)); /* Efecto de brillo */
+}
+
+
+.gif-left, .gif-right {
+    max-width: 100px; /* Ajusta el tamaño si es necesario */
+    height: auto;
+    position: absolute;
+}
+
+.gif-left {
+    left: 5%;
+}
+
+.gif-right {
+    right: 5%;
+}
+
+.love-text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.3);
+    color: #000000;
+}
+
+
+
